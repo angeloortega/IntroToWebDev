@@ -9,7 +9,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 .page-active {
   display: block;
 }
-
 .column {
   float: left;
   padding: 10px;
@@ -32,6 +31,13 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
+  }
+}
+
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
   }
 }
 .cover {

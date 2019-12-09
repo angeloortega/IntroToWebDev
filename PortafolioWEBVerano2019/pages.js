@@ -90,6 +90,8 @@ function setupEntry(){
   }
 
   $("#entryInfo").append(appendable);
+  $("#entryInfo").append('<a href="./Resources/files/homeworks/'+entry+'" download="'+entry+'"><button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">Download File</button></a>');
+
 }
 // Script to open and close sidebar
 function w3_open() {
