@@ -1,0 +1,40 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+/*For two column layout*/
+* {
+    box-sizing: border-box;
+  }
+.page {
+  display: none;
+}
+.page-active {
+  display: block;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+}
+.left {
+  width: 65%;
+}
+
+.right {
+  width: 35%;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Create two equal columns that sitnext to each other */
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+.cover {
+    object-fit: cover;
+    height: 210px;
+}
