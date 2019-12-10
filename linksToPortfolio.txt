@@ -1,5 +1,3 @@
-Link de la pagina en vivo> https://angeloortega.github.io/IntroToWebDev/PortafolioWEBVerano2019/index.html
+Link de la pagina en vivo> https://angeloortega.github.io/IntroToWebDev/Practicas/PrCalendario/Calendario.html
 
 Link del repositorio de GitHub> https://github.com/angeloortega/IntroToWebDev
-
-Nota: Para ver una entrada del portafolio, hacer click en la imagen!

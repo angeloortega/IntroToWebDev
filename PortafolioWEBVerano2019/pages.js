@@ -70,6 +70,10 @@ function pageClick(page) {
   $('#pagenav'+page).addClass('w3-black')
 }
 function openEntry(entryTitle,entry,entryType){
+  if(entryType === "html"){
+    window.location.href = entry;
+    return;
+  }
   window.location.href = 'entry.html?entry='+encodeURI(entry)+'&type='+entryType+'&title='+entryTitle;
 }
 function setupEntry(){
