@@ -50,6 +50,9 @@ function escribirdias(){
                 celda.style.backgroundColor = "#1abc9c";
                 celda.innerHTML = "<cite title='Fecha Actual'>" + midia + "</cite>"
             }
+            else{
+                celda.style.backgroundColor = "#eee";
+            }
             midia = midia + 1;
             diames.setDate(midia);
         }

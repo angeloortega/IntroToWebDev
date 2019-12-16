@@ -11,15 +11,19 @@ body{
 #anterior {
     float: left;
     color: #fff;
+    border: 1px solid white;
+    width: 128px;
   }
   
 #posterior {
     float: right;
     color: #fff;
+    border: 1px solid white;
+    width: 128px;
   }
   
 table{
-    margin-top:-16px; 
+    margin-top:16px; 
     margin-left:auto; 
     margin-right:auto;
     width: 600px;

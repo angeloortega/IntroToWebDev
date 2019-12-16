@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Sign Up</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="./styles/register.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+                <div class="card card-signin my-5">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Sign Up</h5>
+
+                        <form class="form-signup" data-toggle="validator">
+                            <div class="inline-form">
+                                <div class="form-group form-label-group left-form">
+                                    <input type="text" id="name" class="form-control" placeholder="Email address"
+                                        required autofocus pattern="^[_A-z0-9]{1,}$" data-error="Please enter your name" required>
+                                    <label for="name">First Name</label>
+                                    <div style="margin-top:5px" class="help-block with-errors"></div>
+                                </div>
+                                <div class="form-group form-label-group right-form">
+                                    <input type="text" id="lastnames" class="form-control" placeholder="Email address"
+                                        required autofocus pattern="^[_A-z0-9]{1,}$" data-error="Please enter your last name" required>
+                                    <label for="lastnames">Last name</label>
+                                    <div style="margin-top:5px" class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="inline-form">
+                                <div class="form-group form-label-group left-form">
+                                    <input type="date" id="inputDate" class="form-control" placeholder="Email address"
+                                        required autofocus>
+                                    <label for="inputDate">Birth Date</label>
+                                </div>
+                                <div class="form-group form-label-group right-form">
+                                    <input type="text" id="inputPhone" class="form-control" placeholder="Phone number"
+                                        required autofocus pattern="^[0-9]{8,12}$" data-error="Please enter your phone number" required>
+                                    <label for="inputPhone">Phone</label>
+                                    <div style="margin-top:5px" class="help-block with-errors"></div>
+                                </div>
+                            </div>
+
+                            <div class="form-group form-label-group">
+                                <input type="email" id="inputEmail" class="form-control" placeholder="Email address"
+                                    required autofocus data-error="Please enter a valid e-mail" required>
+                                <label for="inputEmail">Email address</label>
+                                <div style="margin-top:5px" class="help-block with-errors"></div>
+
+                            </div>
+
+                            <div class="form-group pass-show inline-form">
+                                <div class="form-group form-label-group left-form">
+                                    <input type="text" id="inputUser" class="form-control" placeholder="Phone number"
+                                        required autofocus  data-error="Please enter your username" required>
+                                    <label for="inputUser">Username</label>
+                                    <div style="margin-top:5px" class="help-block with-errors"></div>
+                                </div>
+                                <div class="form-group form-label-group right-form">
+                                    <input type="password" id="inputPassword" class="form-control"
+                                        placeholder="Password" data-toggle="password" data-error="Password must include 1 uppercase, lowercase, number and be 8-15 characters long" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$" required>
+                                    <label for="inputPassword">Password</label>
+                                    <div style="margin-top:5px" class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <button id="signup-btn" class="btn btn-lg btn-primary btn-block text-uppercase"
+                                type="submit">Sign up</button>
+                            <hr class="my-4">
+                            <p class="message">Already registered? <a href="login.html">Log in instead</a> or <a
+                                    href="password.html">Change password</a></p>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./scripts/register.js"></script>
+</body>
+
+</html>
