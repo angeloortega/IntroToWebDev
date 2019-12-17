@@ -27,10 +27,11 @@
                 <div class="card card-signin my-5">
                     <div class="card-body">
                         <h5 class="card-title text-center">Sign In</h5>
-                        
+
                         <form class="form-signin" data-toggle="validator">
                             <div class="form-group form-label-group">
-                                <input type="text" id="inputUser" class="form-control" placeholder="Username" autofocus pattern="^[_A-z0-9]{1,}$" data-error="Please enter your username" required>
+                                <input type="text" id="inputUser" class="form-control" placeholder="Username"
+                                    pattern="^[_A-z0-9]{1,}$" data-error="Please enter your username" required>
                                 <label for="inputUser">Username</label>
                                 <div style="margin-top:18px" class="help-block with-errors"></div>
                             </div>
@@ -38,7 +39,9 @@
                             <div class="form-group pass-show">
                                 <div class="form-label-group">
                                     <input type="password" id="inputPassword" class="form-control"
-                                        placeholder="Password" data-toggle="password" data-error="Please enter your password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$" required>
+                                        placeholder="Password" data-toggle="password"
+                                        data-error="Please enter your password"
+                                        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$" required>
                                     <label for="inputPassword">Password</label>
                                 </div>
                             </div>
@@ -49,9 +52,10 @@
                             </div>
                             <button id="login-btn" class="btn btn-lg btn-primary btn-block text-uppercase"
                                 type="submit">Sign in</button>
-                            <hr class="my-4">
-                            <p class="message">Not registered? <a href="register.html">Create an account</a> or <a href="password.html">Change password</a></p>
                         </form>
+                        <hr class="my-4">
+                        <p class="message">Not registered? <a href="register.html">Create an account</a> or <a
+                                href="password.html">Change password</a></p>
                     </div>
                 </div>
             </div>
