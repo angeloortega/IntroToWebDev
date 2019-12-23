@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS logindb;
+
+CREATE TABLE IF NOT EXISTS logindb.users (
+    username VARCHAR(255) PRIMARY KEY,
+    firstname VARCHAR(255) NOT NULL,
+    lastname VARCHAR(255) NOT NULL,
+    birth_date DATE,
+    email VARCHAR(255) NOT NULL,
+    pass VARCHAR(255) NOT NULL
+)  ENGINE=INNODB;
