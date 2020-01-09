@@ -1,0 +1,95 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-83.941705, 9.897567]
+      },
+      "properties": {
+        "name": "RECOPE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-84.017496, 9.910952]
+      },
+      "properties": {
+        "name": "Momentum Pinares"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-84.041318, 9.928919]
+      },
+      "properties": {
+        "name": "Plaza del Sol"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-84.057815, 9.93841]
+      },
+      "properties": {
+        "name": "Condominio Benicarlo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-84.625324, 9.611733]
+      },
+      "properties": {
+        "name": "Jaco Walk"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-84.626656, 9.613131]
+      },
+      "properties": {
+        "name": "Mas x Menos"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-84.617113, 9.599976]
+      },
+      "properties": {
+        "name": "Gasolinera Delta"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-84.271308, 9.477501]
+      },
+      "properties": {
+        "name": "Playa Palo Seco"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-84.228005, 9.617678]
+      },
+      "properties": {
+        "name": "Villa Casa Altamar"
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+#map { 
+    height: 720px; 
+    width: 720px
+    }
+
+#map2 { 
+    height: 720px; 
+    width: 720px
+    }
+
+
+.marker-cluster-Jaco div {
+background-color: rgb(233, 230, 79);
+}
+.marker-cluster-recoger div {
+background-color: rgba(5, 185, 5, 0.6);
+}
+.marker-cluster-playa div {
+background-color: rgba(252, 19, 19, 0.6);
+}
