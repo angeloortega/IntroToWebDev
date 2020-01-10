@@ -154,7 +154,7 @@ function main(){
         iconCreateFunction: function (cluster) {
             var childCount = cluster.getChildCount();
             var c = ' marker-cluster-recoger';
-            return new L.DivIcon({ html: '<div><span>' + childCount + '</span></div>', 
+            return new L.DivIcon({ html: '<div><span> <img src="../../../PortafolioWEBVerano2019/Resources/images/bus.png"></span></div>', 
              className: 'marker-cluster' + c, iconSize: new L.Point(40, 40) });
             }
     });
@@ -162,7 +162,7 @@ function main(){
         iconCreateFunction: function (cluster) {
             var childCount = cluster.getChildCount();
             var c = ' marker-cluster-Jaco';
-            return new L.DivIcon({ html: '<div><span>' + childCount + '</span></div>', 
+            return new L.DivIcon({ html: '<div><span> <img src="../../../PortafolioWEBVerano2019/Resources/images/shop.png"></span></div>', 
              className: 'marker-cluster' + c, iconSize: new L.Point(40, 40) });
             }
     });
@@ -170,7 +170,7 @@ function main(){
         iconCreateFunction: function (cluster) {
             var childCount = cluster.getChildCount();
             var c = ' marker-cluster-playa';
-            return new L.DivIcon({ html: '<div><span>' + childCount + '</span></div>', 
+            return new L.DivIcon({ html: '<div><span> <img src="../../../PortafolioWEBVerano2019/Resources/images/palm.png"></span></div>', 
              className: 'marker-cluster' + c, iconSize: new L.Point(40, 40) });
             }
     });
