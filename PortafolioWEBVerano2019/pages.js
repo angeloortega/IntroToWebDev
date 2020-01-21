@@ -91,7 +91,9 @@ function setupEntry() {
     case "pdf":
       appendable = '<object data="./Resources/files/homeworks/' + entry + '" type="application/pdf" width="100%" height="800px"><p>Alternative text - include a link <a href="./Resources/files/homeworks/' + entry + '">to the PDF!</a></p></object>'
       break;
-
+    case "zip":
+      appendable = ''
+      break;
     default:
       appendable = '<img src="./Resources/files/homeworks/' + entry + '" alt="Honework 1.1" style="width:100%">'
       break
