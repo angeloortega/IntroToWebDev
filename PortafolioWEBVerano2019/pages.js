@@ -49,7 +49,7 @@ function getAllUrlParams(url) {
         if (!obj[paramName]) {
           // if it doesn't exist, create property
           obj[paramName] = paramValue;
-        } else if (obj[paramName] && typeof obj[paramName] === 'string'){
+        } else if (obj[paramName] && typeof obj[paramName] === 'string') {
           // if property does exist and it's a string, convert it to an array
           obj[paramName] = [obj[paramName]];
           obj[paramName].push(paramValue);
@@ -64,37 +64,41 @@ function getAllUrlParams(url) {
   return obj;
 }
 function pageClick(page) {
-	$('.page-active').removeClass('page-active');
-  $('#page'+page).addClass('page-active');
+  $('.page-active').removeClass('page-active');
+  $('#page' + page).addClass('page-active');
   $('.w3-black').removeClass('w3-black');
-  $('#pagenav'+page).addClass('w3-black')
+  $('#pagenav' + page).addClass('w3-black')
 }
-function openEntry(entryTitle,entry,entryType){
-  if(entryType === "html"){
+function openEntry(entryTitle, entry, entryType) {
+  if (entryType === "html") {
     window.location.href = entry;
     return;
   }
-  window.location.href = 'entry.html?entry='+encodeURI(entry)+'&type='+entryType+'&title='+entryTitle;
+  window.location.href = 'entry.html?entry=' + encodeURI(entry) + '&type=' + entryType + '&title=' + entryTitle;
 }
-function setupEntry(){
-  let query= getAllUrlParams(window.location.href);
+function setupEntry() {
+  let query = getAllUrlParams(window.location.href);
   let entryTitle = query["title"];
   let entryType = query["type"];
-  let entry  = query["entry"];
+  let entry = query["entry"];
   let appendable = "";
 
   $('body > div.w3-main > div > h4 > b').text(decodeURI(entryTitle));
-  switch(entryType){
-    case "pdf":
-      appendable = '<object data="./Resources/files/homeworks/'+ entry +'" type="application/pdf" width="100%" height="800px"><p>Alternative text - include a link <a href="./Resources/files/homeworks/'+ entry +'">to the PDF!</a></p></object>'
+  switch (entryType) {
+    case "mp4":
+      appendable = '<video width="640" height="480" controls><source src="./Resources/files/homeworks/' + entry + '" type="video/mp4">Your browser does not support the video tag.</video>'
       break;
+    case "pdf":
+      appendable = '<object data="./Resources/files/homeworks/' + entry + '" type="application/pdf" width="100%" height="800px"><p>Alternative text - include a link <a href="./Resources/files/homeworks/' + entry + '">to the PDF!</a></p></object>'
+      break;
+
     default:
-      appendable = '<img src="./Resources/files/homeworks/'+  entry +'" alt="Honework 1.1" style="width:100%">'
+      appendable = '<img src="./Resources/files/homeworks/' + entry + '" alt="Honework 1.1" style="width:100%">'
       break
   }
 
   $("#entryInfo").append(appendable);
-  $("#entryInfo").append('<a href="./Resources/files/homeworks/'+entry+'" download="'+entry+'"><button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">Download File</button></a>');
+  $("#entryInfo").append('<a href="./Resources/files/homeworks/' + entry + '" download="' + entry + '"><button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">Download File</button></a>');
 
 }
 // Script to open and close sidebar

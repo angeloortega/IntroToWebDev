@@ -1,0 +1,19 @@
+hr{
+    height: 2px;
+    background: gray;  
+    opacity: 50%;
+}
+
+.leaflet-popup-content {
+    height: 110px;
+}  
+h1{
+    font-size: 20px;
+    text-align: center;
+}
+#errorMessage{
+    color:darkred;
+}
+#successMessage{
+    color:darkblue;
+}

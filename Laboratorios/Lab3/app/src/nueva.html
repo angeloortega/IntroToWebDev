@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Agregar Mapa</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
+    <link rel="stylesheet" href="./map.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js" <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./nueva.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="table-wrapper">
+            <h1 id="successMessage"><b></b></h1>
+            <h1 id="errorMessage"><b></b></h1>
+            <h2>Información de ruta</h2>
+            <h3>Instrucciones de uso</h3>
+            <p>
+                Para agregar una ruta solo hace falta añadir toda la información de la ruta y sus respectivos puntos.
+                <br>
+                <br>
+                <b>Para agregar un punto:</b>
+                <br>
+                Has click en el mapa en el punto y has click en: agregar punto.
+                <br>
+                Una vez tengas todos los puntos, has click en "Enviar Ruta" y listo!
+            </p>
+            
+            <div id="map"></div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="todolist not-done">
+                    <h3>Información de ruta</h3>
+                    <form role="form" id="formRoute" enctype="multipart/form-data" class = "form-horizontal">
+                    <input id="nombreRuta" type="text" class="form-control add-point" placeholder="Nombre">
+                    <input id="descripcionRuta" type="text" class="form-control add-point" placeholder="Descripción">
+                    <h3>Puntos añadidos:</h3>
+                    <hr>
+                    <ul id="sortable">
+                    </ul>
+                    <hr>
+                    <div class="todo-footer">
+                        <button id="AgregarPunto" id="checkAll" style="margin-top:10px;" class="btn btn-success">Agregar
+                            Ruta</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./nueva.js"></script>
+</body>
+
+</html>

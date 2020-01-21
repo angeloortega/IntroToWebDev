@@ -1,0 +1,9 @@
+#map { 
+    height: 720px; 
+    width: 720px;
+    margin-left: 20%;
+    }
+
+.mapfix{
+    text-align: center;
+}

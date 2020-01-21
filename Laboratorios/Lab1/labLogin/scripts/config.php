@@ -5,12 +5,12 @@ class DAOUsuarios
     public $mysqli;
     function __construct(){
         define('DB_SERVER', 'localhost');
-        define('DB_USERNAME', 'root');
-        define('DB_PASSWORD', '');
+        define('DB_USERNAME', 'angelo');
+        define('DB_PASSWORD', 'password');
         define('DB_NAME', 'logindb');
         
         /* Attempt to connect to MySQL database */
-        $this->mysqli = new mysqli(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
+        $this->mysqli = new mysqli('localhost', 'angelo', 'password', 'logindb');
         
         // Check connection
         if($this->mysqli === false){
